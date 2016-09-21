@@ -1,12 +1,17 @@
-{% set version = "3.0.5" %}
+{%set name = "apscheduler" %}
+{%set version = "3.2.0" %}
+{%set hash_type = "sha256" %}
+{%set hash_val = "b21900a55ba84f613463da9328818424c7f755a18bf218e1bfe47710ad679c81" %}
+{%set compress_type = "tar.gz" %}
 
 package:
-  name: apscheduler
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/agronholm/apscheduler.git
-  git_rev: v{{ version }}
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://github.com/agronholm/{{ name }}/archive/v{{ version }}.{{ compress_type }}
+  {{ hash_type }}: {{ hash_val }}
 
 build:
   number: 0
@@ -16,25 +21,34 @@ requirements:
   build:
     - python
     - setuptools
-    - six
+    - six >=1.4.0
     - pytz
-    - tzlocal
+    - tzlocal >=1.2
     - futures
   run:
     - python
-    - six
+    - six >=1.4.0
     - pytz
-    - tzlocal
+    - tzlocal >=1.2
     - futures
 
 test:
   imports:
     - apscheduler
+    - apscheduler.executors
+    - apscheduler.jobstores
+    - apscheduler.schedulers
+    - apscheduler.schedulers.blocking
+    - apscheduler.triggers
+    - apscheduler.triggers.cron
 
 about:
   home: https://github.com/agronholm/apscheduler
   license: MIT
+  license_file: LICENSE.txt
   summary: In-process task scheduler with Cron-like capabilities
+  dev_url: https://github.com/agronholm/apscheduler
+  doc_url: https://apscheduler.readthedocs.io
 
 extra:
   recipe-maintainers:
