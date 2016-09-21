@@ -25,15 +25,15 @@ requirements:
     - six >=1.4.0
     - pytz
     - tzlocal >=1.2
-    - futures # [py27]
-    - funcsigs # [py27]
+    - futures  # [py27]
+    - funcsigs  # [py27]
   run:
     - python
     - six >=1.4.0
     - pytz
     - tzlocal >=1.2
-    - futures # [py27]
-    - funcsigs # [py27]
+    - futures  # [py27]
+    - funcsigs  # [py27]
 
 test:
   imports:
