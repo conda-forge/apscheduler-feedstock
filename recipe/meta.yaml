@@ -29,6 +29,7 @@ requirements:
     - funcsigs  # [py27]
   run:
     - python
+    - setuptools
     - six >=1.4.0
     - pytz
     - tzlocal >=1.2
