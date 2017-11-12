@@ -1,7 +1,7 @@
 {%set name = "APScheduler" %}
-{%set version = "3.3.1" %}
+{%set version = "3.4.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "f68874dff1bdffcc6ce3adb7840c1e4d162c609a3e3f831351df30b75732767b" %}
+{%set hash_val = "b51118a8ed014104f7e440456dcbd90f2015aea7bcc34c57e307fb34bc746316" %}
 {%set compress_type = "tar.gz" %}
 
 package:
@@ -22,11 +22,6 @@ requirements:
     - python
     - setuptools
     - setuptools_scm
-    - six >=1.4.0
-    - pytz
-    - tzlocal >=1.2
-    - futures  # [py27]
-    - funcsigs  # [py27]
   run:
     - python
     - setuptools
