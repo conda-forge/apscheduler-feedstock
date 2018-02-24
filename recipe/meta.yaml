@@ -1,7 +1,7 @@
 {%set name = "APScheduler" %}
-{%set version = "3.5.0" %}
+{%set version = "3.5.1" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "1ce44d5132b7951f4614067c88ca34cfee1ff97f6f0892581d79b636d83eab89" %}
+{%set hash_val = "952c8f46a11f32b9d5bfbe3e347dac2cdf0680d8b4799590dc9c3a9865b73b65" %}
 {%set compress_type = "tar.gz" %}
 
 package:
