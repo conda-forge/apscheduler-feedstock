@@ -14,14 +14,16 @@ Summary: In-process task scheduler with Cron-like capabilities
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/apscheduler-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/apscheduler-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/apscheduler-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/apscheduler-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/apscheduler-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/apscheduler-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/apscheduler-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/apscheduler-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/apscheduler-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/apscheduler-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/apscheduler-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/apscheduler-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/apscheduler/badges/version.svg)](https://anaconda.org/conda-forge/apscheduler)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/apscheduler/badges/downloads.svg)](https://anaconda.org/conda-forge/apscheduler)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-apscheduler-green.svg)](https://anaconda.org/conda-forge/apscheduler) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/apscheduler.svg)](https://anaconda.org/conda-forge/apscheduler) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/apscheduler.svg)](https://anaconda.org/conda-forge/apscheduler) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/apscheduler.svg)](https://anaconda.org/conda-forge/apscheduler) |
 
 Installing apscheduler
 ======================
