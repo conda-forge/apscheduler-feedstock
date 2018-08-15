@@ -1,8 +1,8 @@
-{%set name = "APScheduler" %}
+{% set name = "APScheduler" %}
 {% set version = "3.5.3" %}
-{%set hash_type = "sha256" %}
+{% set hash_type = "sha256" %}
 {% set hash_val = "6599bc78901ee7e9be85cbd073d9cc155c42d2bc867c5cde4d4d1cc339ebfbeb" %}
-{%set compress_type = "tar.gz" %}
+{% set compress_type = "tar.gz" %}
 
 package:
   name: {{ name|lower }}
@@ -15,11 +15,12 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
+    - pip
     - setuptools
     - setuptools_scm
   run:
