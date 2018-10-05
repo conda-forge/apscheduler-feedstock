@@ -46,7 +46,7 @@ about:
   home: https://github.com/agronholm/apscheduler
   license: MIT
   license_file: LICENSE.txt
-  summary: In-process task scheduler with Cron-like capabilities
+  summary: In-process task scheduler with Cron-like capabilities 
   dev_url: https://github.com/agronholm/apscheduler
   doc_url: https://apscheduler.readthedocs.io
 
