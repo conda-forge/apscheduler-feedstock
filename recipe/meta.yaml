@@ -1,7 +1,7 @@
 {% set name = "APScheduler" %}
-{% set version = "3.5.3" %}
+{% set version = "3.6.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "6599bc78901ee7e9be85cbd073d9cc155c42d2bc867c5cde4d4d1cc339ebfbeb" %}
+{% set hash_val = "8f56b888fdc9dc57dd18d79c124b5093a01e29144be84e3e99130600eea34260" %}
 {% set compress_type = "tar.gz" %}
 
 package:
@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
