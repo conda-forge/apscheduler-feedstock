@@ -22,9 +22,11 @@ requirements:
   host:
     - python >=3.5
     - pip
+    - setuptools
     - setuptools_scm >=1.70
   run:
     - python >=3.5
+    - setuptools
     - pytz
     - tzlocal >=1.2
 
