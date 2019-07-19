@@ -14,23 +14,19 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
-    - setuptools
-    - setuptools_scm
+    - setuptools_scm >=1.70
   run:
-    - python
-    - setuptools
-    - six >=1.4.0
+    - python >=3.5
     - pytz
     - tzlocal >=1.2
-    - futures  # [py27]
-    - funcsigs  # [py27]
 
 test:
   imports:
