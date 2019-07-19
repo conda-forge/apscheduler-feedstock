@@ -26,6 +26,7 @@ requirements:
   run:
     - python
     - setuptools
+    - six >=1.4.0
     - pytz
     - tzlocal >=1.2
     - futures  # [py27]
