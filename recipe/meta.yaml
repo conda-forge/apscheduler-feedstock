@@ -14,21 +14,22 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.5
+    - python
     - pip
     - setuptools
     - setuptools_scm >=1.70
   run:
-    - python >=3.5
+    - python
     - setuptools
     - pytz
     - tzlocal >=1.2
+    - futures  # [py27]
+    - funcsigs  # [py27]
 
 test:
   imports:
