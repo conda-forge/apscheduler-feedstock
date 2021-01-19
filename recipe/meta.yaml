@@ -1,20 +1,18 @@
 {% set name = "APScheduler" %}
-{% set version = "3.6.3" %}
-{% set hash_val = "3bb5229eed6fbbdafc13ce962712ae66e175aa214c69bed35a06bffcf0c5e244" %}
-{% set compress_type = "tar.gz" %}
+{% set version = "3.7.0" %}
+{% set hash_val = "1cab7f2521e107d07127b042155b632b7a1cd5e02c34be5a28ff62f77c900c6a" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
-  number: 3
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,7 +25,7 @@ requirements:
     - setuptools
     - six >=1.4.0
     - pytz
-    - tzlocal >=1.2
+    - tzlocal >=2.0,<2.1
     - futures  # [py27]
     - funcsigs  # [py27]
     - trollius  # [py27]
@@ -46,7 +44,7 @@ about:
   home: https://github.com/agronholm/apscheduler
   license: MIT
   license_file: LICENSE.txt
-  summary: In-process task scheduler with Cron-like capabilities 
+  summary: In-process task scheduler with Cron-like capabilities
   dev_url: https://github.com/agronholm/apscheduler
   doc_url: https://apscheduler.readthedocs.io
 
