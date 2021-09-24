@@ -1,6 +1,6 @@
 {% set name = "APScheduler" %}
-{% set version = "3.7.0" %}
-{% set hash_val = "1cab7f2521e107d07127b042155b632b7a1cd5e02c34be5a28ff62f77c900c6a" %}
+{% set version = "3.8.0" %}
+{% set hash_val = "793b2d37c52ece53e34626619e6142e99b20b59a12155f39e1e6932e324f079d" %}
 
 package:
   name: {{ name|lower }}
