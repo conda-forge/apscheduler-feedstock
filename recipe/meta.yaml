@@ -1,6 +1,6 @@
 {% set name = "APScheduler" %}
-{% set version = "3.8.0" %}
-{% set hash_val = "793b2d37c52ece53e34626619e6142e99b20b59a12155f39e1e6932e324f079d" %}
+{% set version = "3.8.1" %}
+{% set hash_val = "5cf344ebcfbdaa48ae178c029c055cec7bc7a4a47c21e315e4d1f08bd35f2355" %}
 
 package:
   name: {{ name|lower }}
@@ -25,10 +25,10 @@ requirements:
     - setuptools
     - six >=1.4.0
     - pytz
-    - tzlocal >=2.0,<2.1
-    - futures  # [py27]
-    - funcsigs  # [py27]
-    - trollius  # [py27]
+    - tzlocal >=2.0,<3.0
+    - futures  # [py==27]
+    - funcsigs  # [py==27]
+    - trollius  # [py==27]
 
 test:
   imports:
