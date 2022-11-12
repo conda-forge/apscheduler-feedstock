@@ -1,6 +1,6 @@
 {% set name = "APScheduler" %}
-{% set version = "3.6.3" %}
-{% set hash_val = "3bb5229eed6fbbdafc13ce962712ae66e175aa214c69bed35a06bffcf0c5e244" %}
+{% set version = "3.9.1.post1" %}
+{% set hash_val = "b2bea0309569da53a7261bfa0ce19c67ddbfe151bda776a6a907579fdbd3eb2a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 6
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
