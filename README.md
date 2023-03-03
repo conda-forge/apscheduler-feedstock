@@ -1,11 +1,11 @@
-About apscheduler
-=================
+About apscheduler-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apscheduler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/agronholm/apscheduler
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apscheduler-feedstock/blob/main/LICENSE.txt)
 
 Summary: In-process task scheduler with Cron-like capabilities
 
