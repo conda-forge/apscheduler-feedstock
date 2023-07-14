@@ -11,7 +11,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - setuptools
     - six >=1.4.0
     - pytz
-    - tzlocal >=2.0,<3.0
+    - tzlocal >=2.0,!=3.*
     - futures  # [py==27]
     - funcsigs  # [py==27]
     - trollius  # [py==27]
