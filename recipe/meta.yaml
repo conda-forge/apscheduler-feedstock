@@ -37,6 +37,10 @@ test:
     - apscheduler.schedulers.blocking
     - apscheduler.triggers
     - apscheduler.triggers.cron
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/agronholm/apscheduler
