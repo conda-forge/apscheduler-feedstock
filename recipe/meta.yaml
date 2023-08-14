@@ -1,6 +1,6 @@
 {% set name = "APScheduler" %}
-{% set version = "3.10.2" %}
-{% set hash_val = "64b65f9ad6803846ca6d9ce0efcb4d7a049df7cb7cf2eb46eddf74dfa7665f8d" %}
+{% set version = "3.10.3" %}
+{% set hash_val = "3f17fd3915f14f4bfa597f552130a14a9d1cc74a002fa1d95dd671cb48dba70e" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - six >=1.4.0
     - pytz
     - tzlocal >=2.0,!=3.*
-    - importlib-metadata 
+    - importlib-metadata
 
 test:
   imports:
