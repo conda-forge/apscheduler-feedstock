@@ -11,7 +11,7 @@ Summary: In-process task scheduler with Cron-like capabilities
 
 Development: https://github.com/agronholm/apscheduler
 
-Documentation: https://apscheduler.readthedocs.io
+Documentation: https://apscheduler.readthedocs.io/
 
 Current build status
 ====================
