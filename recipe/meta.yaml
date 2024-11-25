@@ -1,13 +1,13 @@
 {% set name = "APScheduler" %}
-{% set version = "3.10.4" %}
-{% set hash_val = "e6df071b27d9be898e486bc7940a7be50b4af2e9da7c08f0744a96d4bd4cef4a" %}
+{% set version = "3.11.0" %}
+{% set hash_val = "4c622d250b0955a65d5d0eb91c33e6d43fd879834bf541e0a18661ae60460133" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
@@ -25,7 +25,7 @@ requirements:
     - python >=3.6
     - six >=1.4.0
     - pytz
-    - tzlocal >=2.0,!=3.*
+    - tzlocal >=3.0
     - importlib-metadata
 
 test:
