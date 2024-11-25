@@ -1,0 +1,52 @@
+context:
+  version: 3.11.0
+  python_min: "3.9"
+
+package:
+  name: apscheduler
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/a/APScheduler/apscheduler-${{ version }}.tar.gz
+  sha256: 4c622d250b0955a65d5d0eb91c33e6d43fd879834bf541e0a18661ae60460133
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - pip
+    - setuptools >=64
+    - setuptools_scm >=6.4
+  run:
+    - python >=${{ python_min }}
+    - tzlocal >=3.0
+
+tests:
+  - python:
+      imports:
+        - apscheduler
+        - apscheduler.executors
+        - apscheduler.jobstores
+        - apscheduler.schedulers
+        - apscheduler.schedulers.blocking
+        - apscheduler.triggers
+        - apscheduler.triggers.cron
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: LICENSE.txt
+  summary: In-process task scheduler with Cron-like capabilities
+  homepage: https://github.com/agronholm/apscheduler
+  repository: https://github.com/agronholm/apscheduler
+  documentation: https://apscheduler.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - ddunwoody
+    - synapticarbors
