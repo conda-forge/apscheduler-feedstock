@@ -1,5 +1,5 @@
 context:
-  version: 3.11.0
+  version: "3.11.2"
   python_min: "3.9"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/APScheduler/apscheduler-${{ version }}.tar.gz
-  sha256: 4c622d250b0955a65d5d0eb91c33e6d43fd879834bf541e0a18661ae60460133
+  sha256: 2a9966b052ec805f020c8c4c3ae6e6a06e24b1bf19f2e11d91d8cca0473eef41
 
 build:
   number: 0
